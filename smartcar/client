@@ -32,4 +32,27 @@ abstract class ApiClient {
   private static final String SDK_VERSION = ApiClient.getSdkVersion();
   
   
+  private static final String SDK_VERSION = ApiClient.getSdkVersion();
+
+  private static final String API_VERSION = "v1.0";
+
+  protected static final String URL_API = "https://api.smartcar.com/" + ApiClient.API_VERSION;
+
+  protected static final String USER_AGENT = String.format(
+
+      "Smartcar/%s (%s; %s) Java v%s %s",
+
+      ApiClient.SDK_VERSION,
+
+      System.getProperty("os.name"),
+
+      System.getProperty("os.arch"),
+
+      System.getProperty("java.version"),
+
+      System.getProperty("java.vm.name")
+
+  );
+  
+  
   }
