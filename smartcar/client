@@ -48,5 +48,11 @@ abstract class ApiClient {
 
   );
   
+   private static OkHttpClient client = new OkHttpClient();
+
+  static GsonBuilder gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES);
+
+
+  
   
   }
