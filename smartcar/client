@@ -2,7 +2,6 @@
 package com.smartcar.sdk;
 
 
-
 import com.google.gson.FieldNamingPolicy;
 
 import com.google.gson.GsonBuilder;
@@ -20,17 +19,12 @@ import okhttp3.Response;
 
 import org.joda.time.DateTime;
 
-
-
 import java.io.IOException;
 
 
 abstract class ApiClient {
 
   public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
-
-  private static final String SDK_VERSION = ApiClient.getSdkVersion();
-  
   
   private static final String SDK_VERSION = ApiClient.getSdkVersion();
 
