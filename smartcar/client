@@ -7,3 +7,19 @@ import com.google.gson.FieldNamingPolicy;
 
 import com.google.gson.GsonBuilder;
 import com.smartcar.sdk.data.ApiData;
+
+import com.smartcar.sdk.data.SmartcarResponse;
+
+import okhttp3.MediaType;
+
+import okhttp3.OkHttpClient;
+
+import okhttp3.Request;
+
+import okhttp3.Response;
+
+import org.joda.time.DateTime;
+
+
+
+import java.io.IOException;
