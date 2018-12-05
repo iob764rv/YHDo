@@ -62,14 +62,9 @@ abstract class ApiClient {
     if(version == null) {
 
       version = "DEVELOPMENT";
-
     }
 
-
-
     return version;
-   }
-
-  
+   } 
   
   }
