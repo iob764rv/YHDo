@@ -68,7 +68,22 @@ abstract class ApiClient {
    } 
    
     protected static Response execute(Request request) throws SmartcarException {
-       try {}
+       try {
+           Response response = ApiClient.client.newCall(request).execute();
+
+
+
+      if(!response.isSuccessful()) {
+
+        throw new SmartcarException(request, response);
+
+      }
+
+      else {
+
+        return response;
+       
+       }
     }
   
   }
