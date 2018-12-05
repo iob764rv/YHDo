@@ -66,5 +66,9 @@ abstract class ApiClient {
 
     return version;
    } 
+   
+    protected static Response execute(Request request) throws SmartcarException {
+    
+    }
   
   }
