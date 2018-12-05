@@ -53,6 +53,10 @@ abstract class ApiClient {
   static GsonBuilder gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES);
   
   public static String urlApi = ApiClient.URL_API;
+  
+   private static String getSdkVersion() {
+   
+   }
 
   
   
