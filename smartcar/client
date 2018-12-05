@@ -55,7 +55,19 @@ abstract class ApiClient {
   public static String urlApi = ApiClient.URL_API;
   
    private static String getSdkVersion() {
-   
+    String version = ApiClient.class.getPackage().getImplementationVersion();
+
+
+
+    if(version == null) {
+
+      version = "DEVELOPMENT";
+
+    }
+
+
+
+    return version;
    }
 
   
