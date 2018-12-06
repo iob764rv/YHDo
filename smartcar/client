@@ -105,5 +105,10 @@ abstract class ApiClient {
     
 
     T data = ApiClient.gson.create().fromJson(body, dataType);
+        String unitHeader = response.header("sc-unit-system");
+
+
+
+    String ageHeader = response.header("sc-data-age");
   }
   }
