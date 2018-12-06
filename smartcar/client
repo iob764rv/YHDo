@@ -108,6 +108,13 @@ abstract class ApiClient {
     String unitHeader = response.header("sc-unit-system");
 
     String ageHeader = response.header("sc-data-age");
-    if(ageHeader != null) {}
+    if(ageHeader != null) {
+      DateTime date = DateTime.parse(ageHeader);
+
+
+
+      return new SmartcarResponse<T>(data, unitHeader, date.toDate());
+    
+    }
   }
   }
