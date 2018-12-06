@@ -116,5 +116,10 @@ abstract class ApiClient {
       return new SmartcarResponse<T>(data, unitHeader, date.toDate());
     
     }
+     } else {
+
+      return new SmartcarResponse<T>(data, unitHeader, null);
+
+    }
   }
   }
