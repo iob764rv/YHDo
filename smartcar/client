@@ -102,5 +102,8 @@ abstract class ApiClient {
       throw new SmartcarException(ex.getMessage());
 
     }
+    
+
+    T data = ApiClient.gson.create().fromJson(body, dataType);
   }
   }
