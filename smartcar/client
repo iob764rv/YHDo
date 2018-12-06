@@ -93,5 +93,14 @@ abstract class ApiClient {
   
   protected static <T extends ApiData> SmartcarResponse<T> execute(Request request, Class<T> dataType) throws SmartcarException {
      Response response = ApiClient.execute(request);
+     try {
+
+      body = response.body().string();
+
+    } catch (IOException ex) {
+
+      throw new SmartcarException(ex.getMessage());
+
+    }
   }
   }
